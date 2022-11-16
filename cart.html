@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Syamsa'SJ Furniture</title>
+</head>
+
+<header>
+    <!-- Start Navbar -->
+    <nav class="navbar fixed-top shadow" style="background-color:beige;">
+        <div class="container-fluid">
+            <span class="navbar-text">
+                <form class="container-fluid justify-content-start">
+                    <button class="btn btn-outline-secondary me-2" type="button">
+                        <img src="image/shopping-cart.png" width="20" />
+                        <a href="cart.html" class="text-decoration-none">Cart</a>
+                    </button>
+                </form>
+            </span>
+            <a class="navbar-brand" href="landingpage.html"
+                style="color: coral; font-family: 'Times New Roman', Times, serif;"><b>Syamsa'SJ Furniture</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" style="background-color:antiquewhite;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel" style="background-color:antiquewhite;">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"
+                        style="color: darkkhaki; font-family: Arial, Helvetica, sans-serif;">Syamsa'SJ Furniture</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" style="font-family:'Times New Roman', Times, serif;">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Sale</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Tracking Delivery</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Category
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Living Room</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Dining Room</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">BedRoom</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Wall Art</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Accessories</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Office Chairs</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Collection</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <hr>
+                        <li class="nav-item">
+                            <a class="nav-link text-decoration-none" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-decoration-none" href="signup.html">Sign up</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                            style="background-color: cornsilk;">
+                        <button class="btn btn-outline-secondary" type="submit"
+                            style="background-color: rgb(251, 155, 10); color: brown;">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+</header>
+
+<br><br><br>
+
+<body style="background-color: antiquewhite;">
+
+    <section class="h-100">
+        <div class="container h-100 py-5">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-10">
+                    <div class="d-flex justify-content-betwen align-items-center mb-4">
+                        <h3 class="fw-normal mb-0 text-black"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Cart
+                        </h3>
+                    </div>
+                    <!-- Detail Barang -->
+                    <div class="card rounded-3 mb-4">
+                        <div class="card-body p-4">
+                            <div class="row d-flex justify-content-betwen align-items-center">
+                                <div class="col-md-2 col-lg-2 col-xl-2">
+                                    <img src="image/kasur.webp" alt="" class="img-fluid rounded-3">
+                                </div>
+                                <div class="col-md-3 col-lg-3 col-xl-3">
+                                    <p class="lead fw-normal mb-2">Elite Bed</p>
+                                    <p><span class="text-muted">Size : </span>King</p>
+                                </div>
+                                <!-- Nambah Kurang Cart -->
+                                <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                                    <!-- Kurang Cart -->
+                                    <button class="btn btn-link px-2"
+                                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i
+                                            class="fa fa-minus" aria-hidden="true"></i>
+                                    </button>
+                                    <input type="number" min="0" name="quantity" value="2"
+                                        class="form-control from-control-sm" id="form1">
+                                    <!-- Nambah Cart -->
+                                    <button class="btn btn-link px-2"
+                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i
+                                            class="fa fa-plus" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <!-- Nambah Kurang Cart End -->
+                                <div class="col-md-2 col-lg-2 col-xl-2 offset-lg-1">
+                                    <h5 class="mb-0">Rp. 9.000.000</h5>
+                                </div>
+                                <div class="col-md-1 col-lg-1 col-xl-2 text-end">
+                                    <a href="#" class="text-danger">
+                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Detail Barang End -->
+                    <div class="d-grid gap-2">
+                        <button type="button" clas="btn" style="background-color:aqua;">Proceed Payment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <!-- Start footer -->
+        <footer id="footer"
+            style="background-color: tan; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 pt-5">
+                        <h2 class="h2 text-success border-bottom pb-3 border-light logo">Syamsa'SJ Furniture</h2>
+                        <ul class="list-unstyled text-light footer-link-list">
+                            <li>
+                                <i class="fas fa-map-marker-alt fa-fw"></i>
+                                Jl. Nirasari RT 02 RW 03, Teluk, Purwokerto Selatan
+                            </li>
+                            <li>
+                                <i class="fa fa-phone fa-fw"></i>
+                                <a class="text-decoration-none nav-link" href="tel:010-020-0340">0878 0328 0418</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope fa-fw"></i>
+                                <a class="text-decoration-none nav-link"
+                                    href="mailto:info@company.com">julyindasyamsa@gmail.com</a><br>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 pt-5">
+                        <h2 class="h2 text-success border-bottom pb-3 border-light logo">Further Info</h2>
+                        <ul class="list-unstyled text-light footer-link-list">
+                            <li><a class="text-decoration-none nav-link" href="aboutus">About Us</a></li>
+                            <li><a class="text-decoration-none nav-link"
+                                    href="https://goo.gl/maps/cr5kMb9Mutmwx5ZB9">Shop
+                                    Locations</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 pt-5">
+                        <h2 class="h2 text-success border-bottom pb-3 border-light logo">Join</h2>
+                        <ul class="list-unstyled text-light footer-link-list">
+                            <li><a class="text-decoration-none nav-link" href="login.html">Login</a></li>
+                            <li><a class="text-decoration-none nav-link" href="signup.html">Sign Up</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-100 py-3" style="background-color:sienna ;">
+                <div class="container">
+                    <div class="row pt-2">
+                        <div class="col-12">
+                            <p class="text-left text-light">Copyright &copy; 2022 Syamsa'SJ Furniture</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End footer -->
+
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Syamsa'SJ Furniture</title>
+</head>
+
+<header>
+    <!-- Start Navbar -->
+    <nav class="navbar fixed-top shadow" style="background-color:beige;">
+        <div class="container-fluid">
+            <span class="navbar-text">
+                <form class="container-fluid justify-content-start">
+                    <button class="btn btn-outline-secondary me-2" type="button">
+                        <img src="image/shopping-cart.png" width="20" />
+                        <a href="cart.html" class="text-decoration-none">Cart</a>
+                    </button>
+                </form>
+            </span>
+            <a class="navbar-brand text-decoration-none" href="landingpage.html"
+                style="color: coral; font-family: 'Times New Roman', Times, serif;"><b>Syamsa'SJ Furniture</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" style="background-color:antiquewhite;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel" style="background-color:antiquewhite;">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"
+                        style="color: darkkhaki; font-family: Arial, Helvetica, sans-serif;">Syamsa'SJ Furniture</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" style="font-family:'Times New Roman', Times, serif;">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Sale</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Tracking Delivery</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Category
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Living Room</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Dining Room</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">BedRoom</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Wall Art</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Accessories</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Office Chairs</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-decoration-none" href="#">Collection</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-decoration-none" href="#">About Us</a>
+                        </li>
+                        <hr>
+                        <li class="nav-item">
+                            <a class="nav-link text-decoration-none" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-decoration-none" href="signup.html">Sign up</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                            style="background-color: cornsilk;">
+                        <button class="btn btn-outline-secondary" type="submit"
+                            style="background-color: rgb(251, 155, 10); color: brown;">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+</header>
+
+<br><br><br>
+
+<body style="background-color: antiquewhite;">
+    <!-- Start carousel -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="#"><img src="image/BANNER2-furniture Poster.webp" class="d-block w-100" alt="banner"
+                        height="600"></a>
+            </div>
+            <div class="carousel-item">
+                <a href=""><img src="image/BANNER1-Furniture Poster.png" class="d-block w-100" alt="banner"
+                        height="600"></a>
+            </div>
+            <div class="carousel-item">
+                <a href=""><img src="image/BANNER3-furniture Poster.png" class="d-block w-100" alt="banner"
+                        height="600"></a>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- End Carousel -->
+
+    <!-- Start categories of the month -->
+    <section class="container py-5" style="font-family:'Times New Roman', Times, serif;">
+        <div class="row text-center pt-3">
+            <div class="col-lg-6 m-auto">
+                <h1 class="h1">Categories of The Month</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4 p-5 mt-3">
+                <a href="#"><img src="image/kasur.webp" width="500" height="500" class="rounded img-fluid border" /></a>
+                <h5 class="text-center mt-3 mb-3">Elite Bed</h5>
+                <p class="text-center"><a class="btn btn-success">Go Buy</a></p>
+            </div>
+            <div class="col-12 col-md-4 p-5 mt-3">
+                <a href="#"><img src="image/sofa.jpg" width="500" height="500" class="rounded img-fluid border" /></a>
+                <h2 class="h5 text-center mt-3 mb-3">Klippen Sofa</h2>
+                <p class="text-center"><a class="btn btn-success">Go Buy</a></p>
+            </div>
+            <div class="col-12 col-md-4 p-5 mt-3">
+                <a href="#"><img src="image/kursi.webp" width="500" height="500" class="rounded img-fluid border" /></a>
+                <h2 class="h5 text-center mt-3 mb-3">Aztec Chair</h2>
+                <p class="text-center"><a class="btn btn-success">Go Buy</a></p>
+            </div>
+        </div>
+    </section>
+    <!-- End categories of the month -->
+
+    <!-- Start Furniture and Decor collection -->
+    <div class="row text-center pt-3">
+        <div class="col-lg-6 m-auto">
+            <h1 class="h1" style="font-family:'Times New Roman', Times, serif;">Furniture and Decor collection</h1>
+        </div>
+    </div>
+    <br>
+    <div class="container overflow-hidden text-center">
+        <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3" style="font-family:'Times New Roman';">
+            <div class="col-6">
+                <a href="#">
+                    <img src="image/newarrival.webp" alt="product1" width="250" height="250">
+                </a>
+                <div class="p-3">New Arrivals</div>
+            </div>
+            <div class="col-6">
+                <a href="">
+                    <img src="image/diningroom.webp" alt="product2" width="250" height="250">
+                </a>
+                <div class="p-3">Dining Room Furniture</div>
+            </div>
+            <div class="col-6">
+                <a href="">
+                    <img src="image/bedroom.webp" alt="product3" width="250" height="250">
+                </a>
+                <div class="p-3">Bedroom Furniture</div>
+            </div>
+            <div class="col-6">
+                <a href="">
+                    <img src="image/wallart.webp" alt="product1" width="250" height="250">
+                </a>
+                <div class="p-3">Wall Art</div>
+            </div>
+            <div class="col-6">
+                <a href="">
+                    <img src="image/figurines.webp" alt="product2" width="250" height="250">
+                </a>
+                <div class="p-3">Figurines</div>
+            </div>
+            <div class="col-6">
+                <a href="">
+                    <img src="image/projects.webp" alt="product3" width="250" height="250">
+                </a>
+                <div class="p-3">Projects</div>
+            </div>
+            <div class="col-6">
+                <a href="">
+                    <img src="image/Sofas.webp" alt="product2" width="250" height="250">
+                </a>
+                <div class="p-3">Sofas</div>
+            </div>
+            <div class="col-6">
+                <a href="">
+                    <img src="image/accessories.webp" alt="product3" width="250" height="250">
+                </a>
+                <div class="p-3">Accessories</div>
+            </div>
+        </div>
+    </div>
+    <!-- End Furniture and Decor collection -->
+
+    <br><br>
+
+    <!-- Start Home & Living Tips -->
+    <div class="row text-center pt-3">
+        <div class="col-lg-6 m-auto">
+            <h1 class="h1" style="font-family:'Times New Roman', Times, serif;">Home & Living Tips</h1>
+        </div>
+    </div>
+    <br>
+    <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
+        <div class="col-6">
+            <div class="card">
+                <img src="image/tataletak.webp" class="card-img-top" alt="" height="300">
+                <div class="card-body">
+                    <h5 class="card-title">Tata Ulang Letak Furniture</h5>
+                    <p class="card-text">Menurut Interior Communication Manager Dekoruma, Kania Bunga Wraspati menata
+                        ulang letak perabotan bisa memberi suasana baru. Ia pun menyarankan masyarakat untuk memilih
+                        furnitur multifungsi. Sebab, hal ini bisa membuat pemanfaatan ruang lebih maksimal.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card">
+                <img src="image/minimalis.jpeg" class="card-img-top" alt="" height="300">
+                <div class="card-body">
+                    <h5 class="card-title">Hias Rumah dengan Dekorasi Minimalis</h5>
+                    <p class="card-text">Pemilik Usaha Dekornata, Giovanno Warli menyarankan penggunaan elemen dekorasi
+                        berbahan kayu untuk mempercantik dinding rumah minimalis. Pemilihan elemen ini juga menurutnya
+                        dapat menambah
+                        nuansa natural, agar ruangan terlihat lebih hangat dan artistik.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card">
+                <img src="image/seprai.jpg" class="card-img-top" alt="" height="300">
+                <div class="card-body">
+                    <h5 class="card-title">Cermat Memilih Seprai</h5>
+                    <p class="card-text">
+                        Meski kelihatan sepele, cara ini bisa dipraktikkan dengan mudah untuk ubah suasana di rumah.
+                        Corak seprai warna netral dapat dipilih untuk memudahkan padu padan dengan elemen lain saat
+                        mendekorasi kamar tidur. </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Home & Living Tips -->
+
+    <br><br>
+
+    <!-- Start footer -->
+    <footer id="footer"
+        style="background-color: tan; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Syamsa'SJ Furniture</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            Jl. Nirasari RT 02 RW 03, Teluk, Purwokerto Selatan
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="text-decoration-none nav-link" href="tel:010-020-0340">0878 0328 0418</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none nav-link"
+                                href="mailto:info@company.com">julyindasyamsa@gmail.com</a><br>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Further Info</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none nav-link" href="#">About Us</a></li>
+                        <li><a class="text-decoration-none nav-link" href="https://goo.gl/maps/cr5kMb9Mutmwx5ZB9">Shop
+                                Locations</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Join</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none nav-link" href="login.html">Login</a></li>
+                        <li><a class="text-decoration-none nav-link" href="signup.html">Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-100 py-3" style="background-color:sienna ;">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-light">Copyright &copy; 2022 Syamsa'SJ Furniture</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
